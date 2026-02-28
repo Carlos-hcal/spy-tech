@@ -2,57 +2,56 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Spy Tech - Soluções em Tecnologia</title>
+  <title>Spy Tech</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    * {margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif;}
-    body {background:#000;color:#fff;}
-    header {background:#000; padding:40px; text-align:center;}
-    .logo {font-size:40px; font-weight:bold;}
-    .tagline {margin-top:10px; color:#ccc;}
-    section {padding:60px 10%;}
-    .about {background:#fff; color:#000;}
-    .services {background:#000;}
-    .services ul {list-style:none; margin-top:20px;}
-    .services li {margin:10px 0;}
-    .contact {background:#fff; color:#000;}
-    footer {text-align:center; padding:20px; background:#000; color:#888;}
-    button {background:#000; color:#fff; padding:12px 20px; border:none; cursor:pointer;}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">SPY TECH</div>
-    <div class="tagline">Soluções em Tecnologia</div>
-  </header>
 
-  <section class="about">
-    <h2>Quem Somos</h2>
-    <p>Somos especialistas em manutenção e soluções tecnológicas, oferecendo serviços de qualidade, confiança e agilidade para nossos clientes.</p>
-  </section>
+<header>
+  <nav class="navbar">
+    <div ><img class="logo" src="./logo.png" alt="logo"></div>
 
-  <section class="services">
-    <h2>Serviços</h2>
-    <ul>
-      <li>✔️ Manutenção de Computadores</li>
-      <li>✔️ Formatação e Backup</li>
-      <li>✔️ Instalação de Programas</li>
-      <li>✔️ Limpeza e Upgrade</li>
-      <li>✔️ Suporte Técnico</li>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
     </ul>
-  </section>
 
-  <section class="contact">
-    <h2>Contato</h2>
-    <p>📱 (41) 99783-8741</p>
-    <p>📧 spytech.dev@gmail.com</p>
-    <p>🌐 spytech.dev.br</p>
-    <br>
-    <button onclick="window.open('https://wa.me/5541997838741')">Chamar no WhatsApp</button>
-  </section>
+    <div class="nav-actions">
+      <a href="#" class="btn">Orçamento</a>
+    </div>
 
-  <footer>
-    <p>© 2026 Spy Tech - Todos os direitos reservados</p>
-  </footer>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Solução que<br>Excede Expectativas</h1>
+  <p>Tecnologia, confiança e desempenho para seu negócio</p>
+</section>
+
+<section class="cards">
+<div class="card">
+  <h3>💻 Manutenção e Suporte Técnico</h3>
+  <p>Correção de problemas, formatação, otimização e suporte para computadores, notebooks e smartphones.</p>
+  <img class="fix" src="./fix.png" alt="fix">
+</div>
+  <div class="card">
+    <h3>⚙️ Desenvolvimento Web e Mobile</h3>
+    <p>Criação de sites e aplicativos para sistemas e aplicações modernas, rápidas e responsivas.</p>
+  </div>
+  <div class="card">
+    <h3>🧼 UX/UI Design e Criação de Marcas</h3>
+    <p>Design de interfaces, identidade visual e experiência do usuário para seu negócio.</p>
+  </div>
+  <div class="card">
+    <h3>🚀 Soluções em Dados</h3>
+    <p>Análise de dados, relatórios e automação de processos com foco em decisões inteligentes.</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
