@@ -10,9 +10,13 @@
 </head>
 <body>
 
+
+
 <header>
   <nav class="navbar">
-    <div ><img class="logo" src="./img/logo.svg" alt="Logo"></div>
+    <div>
+      <img class="logo" src="./img/logo.svg" alt="Logo SpyTech">
+    </div>
 
     <ul class="nav-links" id="nav-links">
       <li><a href="#">Home</a></li>
@@ -29,60 +33,126 @@
   </nav>
 </header>
 
-<section class="hero">
-  <img class="hero" src="./img/hero.svg" alt="hero">
-  <svg class="blob" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <filter id="blobFilter">
-      <feTurbulence
-        type="turbulence"
-        baseFrequency="0.008"
-        numOctaves="2"
-        seed="2"
-        result="noise">
-        <animate
-          attributeName="baseFrequency"
-          dur="50s"
-          values="0.03;0.04;0.03;"
-          repeatCount="indefinite" />
-      </feTurbulence>
-
-      <feDisplacementMap
-        in="SourceGraphic"
-        in2="noise"
-        scale="70"
-        xChannelSelector="R"
-        yChannelSelector="G" />
-    </filter>
-  </defs>
-
-  <circle cx="200" cy="200" r="140" fill="white" filter="url(#blobFilter)" />
+<svg class="bg-fingers" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <image href="./img/finger.svg" x="100" y="100" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="400" y="150" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="700" y="120" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1000" y="160" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1300" y="130" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1600" y="170" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="200" y="300" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="500" y="320" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="800" y="290" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1100" y="330" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1400" y="310" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1700" y="340" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="120" y="500" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="420" y="520" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="720" y="480" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1020" y="540" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1320" y="510" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1620" y="550" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="250" y="700" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="550" y="720" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="850" y="690" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1150" y="740" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1450" y="710" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1750" y="750" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="350" y="900" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="750" y="920" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1150" y="890" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1550" y="940" width="120" class="finger"/>
+  <image href="./img/finger.svg" x="1850" y="900" width="120" class="finger"/>
 </svg>
+
+<!-- HERO -->
+<section class="hero">
+  <picture class="hero-image">
+    <img src="./img/LogoHero.svg" alt="SpyTech tecnologia">
+  </picture>
+
+  <svg class="blob" viewBox="0 0 428 400" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="blobFilter">
+        <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" seed="2" result="noise">
+          <animate attributeName="baseFrequency" dur="50s" values="0.03;0.04;0.03;" repeatCount="indefinite" />
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="70" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+    <circle cx="200" cy="200" r="140" fill="white" filter="url(#blobFilter)" />
+  </svg>
 </section>
 
+<!-- CARDS -->
 <section class="cards">
-<div class="card">
-  <h3>Manutenção e Suporte Técnico</h3>
-  <p>Correção de problemas, formatação, otimização e suporte para computadores, notebooks e smartphones.</p>
-  <!-- <img class="fix" src="./fix.png" alt="fix"> -->
-</div>
+  <div class="card">
+    <h3>Manutenção e Suporte Técnico</h3>
+    <p>Correção de problemas, formatação, otimização e suporte para computadores, notebooks e smartphones.</p>
+  </div>
+
   <div class="card">
     <h3>Desenvolvimento Web e Mobile</h3>
     <p>Criação de sites e aplicativos para sistemas e aplicações modernas, rápidas e responsivas.</p>
   </div>
+
   <div class="card">
     <h3>UX/UI Design e Criação de Marcas</h3>
     <p>Design de interfaces, identidade visual e experiência do usuário para seu negócio.</p>
   </div>
+
   <div class="card">
     <h3>Soluções em Dados</h3>
     <p>Análise de dados, relatórios e automação de processos com foco em decisões inteligentes.</p>
   </div>
-   <div class="card">
-  <h3>Cybersegurança</h3>
-  <p>Monitoramento, prevenção de ataques e fortalecimento da segurança dos seus sistemas e informações.</p>
-</div>
+
+  <div class="card">
+    <h3>Cybersegurança</h3>
+    <p>Monitoramento, prevenção de ataques e fortalecimento da segurança dos seus sistemas e informações.</p>
+  </div>
 </section>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <img src="./img/logo.svg" alt="SpyTech Logo" class="footer-logo">
+      <p>Tecnologia, segurança e soluções digitais para o seu negócio.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="#">Projetos</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-services">
+      <h4>Serviços</h4>
+      <ul>
+        <li>Manutenção e Suporte</li>
+        <li>Desenvolvimento Web</li>
+        <li>UX/UI Design</li>
+        <li>Cybersegurança</li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contato</h4>
+      <p>Curitiba - PR</p>
+      <p>spytech.dev@gmail.com</p>
+      <p>(41) 99783-8741</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 SpyTech. Todos os direitos reservados.</p>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
