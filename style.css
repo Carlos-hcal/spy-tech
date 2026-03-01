@@ -1,10 +1,3 @@
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 body {
   background: radial-gradient(circle at center, #0C0D12, #05050a);
   color: #fff;
@@ -43,7 +36,7 @@ header {
 }
 
 .nav-links a {
-  color: #e6e6e6;
+  color: #e0e0e0;
   text-decoration: none;
   transition: .3s;
 }
@@ -80,13 +73,19 @@ header {
 
 /* HERO */
 .hero {
-   background: url("./Hero.svg") no-repeat center;
-  background-size: contain;
+ width: 100%;
   height: 100vh;
+  overflow: hidden; /* corta o que passar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero > img{
-   display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* preenche e corta */
+  object-position: center; /* você pode mover o corte */
 }
 
 .hero h1 {
@@ -156,12 +155,12 @@ header {
     padding:20px;
   }
 
-  .hero {
-    height: auto;
-    padding-top: 120px; /* por causa do header fixo */
+ .hero {
+    height: 70vh; /* tamanho da janela de corte */
   }
 
   .hero img {
-    width: 100%;
+    object-fit: cover;
+    object-position: center; 
   }
 }
