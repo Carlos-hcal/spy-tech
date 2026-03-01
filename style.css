@@ -88,15 +88,6 @@ header {
   object-position: center; /* você pode mover o corte */
 }
 
-.hero h1 {
-  font-size: clamp(32px, 6vw, 60px);
-  /* margin-bottom: 20px; */
-}
-
-.hero p {
-  color: #aaa;
-}
-
 /* CARDS */
 .cards {
   display: grid;
@@ -156,7 +147,7 @@ header {
   }
 
  .hero {
-    height: 70vh; /* tamanho da janela de corte */
+    /* height: 70vh; */
   }
 
   .hero img {
