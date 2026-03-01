@@ -30,7 +30,34 @@
 </header>
 
 <section class="hero">
-  <img src="./img/heroimg.svg" alt="hero">
+  <img class="hero" src="./img/hero.svg" alt="hero">
+  <svg class="blob" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="blobFilter">
+      <feTurbulence
+        type="turbulence"
+        baseFrequency="0.008"
+        numOctaves="2"
+        seed="2"
+        result="noise">
+        <animate
+          attributeName="baseFrequency"
+          dur="50s"
+          values="0.03;0.04;0.03;"
+          repeatCount="indefinite" />
+      </feTurbulence>
+
+      <feDisplacementMap
+        in="SourceGraphic"
+        in2="noise"
+        scale="70"
+        xChannelSelector="R"
+        yChannelSelector="G" />
+    </filter>
+  </defs>
+
+  <circle cx="200" cy="200" r="140" fill="white" filter="url(#blobFilter)" />
+</svg>
 </section>
 
 <section class="cards">

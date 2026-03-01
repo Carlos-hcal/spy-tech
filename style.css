@@ -84,8 +84,24 @@ header {
   align-items: center;
 }
 
+.blob {
+  position: relative;
+  width: 680px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+}
+
+
 .hero > img{
-  object-position: center;
+  display: flex;
+   justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: absolute;
+  width: 250px;
 }
 
 /* CARDS */
@@ -152,8 +168,8 @@ header {
   }
 
   .hero img { 
-      width: 100%;
-      height: auto;
-    object-position: center; 
+     z-index: 2;
+  position: absolute;
+  width: 150px;
   }
 }
