@@ -6,28 +6,35 @@ toggle.addEventListener("click", () => {
 });
 
 const fingers = document.querySelectorAll(".finger");
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
 function pulseFingers() {
   if (!fingers.length) return;
 
-  // Quantos fingers ativar (1 a 4)
-  const amount = Math.floor(Math.random() * 30) + 10;
+  const amount = isMobile
+    ? Math.floor(Math.random() * 20) + 10
+    : Math.floor(Math.random() * 20) + 10;
 
-  const shuffled = Array.from(fingers).sort(() => 0.1 - Math.random());
+  const shuffled = Array.from(fingers).sort(() => 0.5 - Math.random());
   const selected = shuffled.slice(0, amount);
 
   selected.forEach((finger) => {
-    const delay = Math.random() * 1500;
-    const visibleTime = Math.random() * 5000 + 1000;
+    const delay = Math.random() * 1200;
 
-    // TAMANHO aleatório (0.5x a 1.2x)
-    const scale = (Math.random() * 3 + 0.5).toFixed(2);
+    const visibleTime = isMobile
+      ? Math.random() * 3000 + 1500
+      : Math.random() * 3000 + 1500;
 
-    // ROTAÇÃO aleatória (-40° a 40°)
-    const rotation = Math.floor(Math.random() * 45 - 45);
+    const scale = isMobile
+      ? (Math.random() * 3 + 0.5).toFixed(2)
+      : (Math.random() * 3 + 0.5).toFixed(2);
+
+    const rotation = Math.floor(Math.random() * 40 - 40);
 
     setTimeout(() => {
+      // define transform UMA VEZ
       finger.style.transform = `scale(${scale}) rotate(${rotation}deg)`;
+
       finger.classList.add("active");
 
       setTimeout(() => {
@@ -37,7 +44,10 @@ function pulseFingers() {
     }, delay);
   });
 
-  const nextCycle = Math.random() * 3000 + 2000;
+  const nextCycle = isMobile
+    ? Math.random() * 3000 + 2000
+    : Math.random() * 3000 + 2000;
+
   setTimeout(pulseFingers, nextCycle);
 }
 
