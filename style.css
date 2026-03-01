@@ -1,7 +1,8 @@
 body {
   background: radial-gradient(circle at center, #0C0D12, #05050a);
-  background: url("./img/background.svg") center no-repeat fixed;
-  background-size: auto;
+  background: url("./img/background.svg") no-repeat center;
+  background-size: cover 100%;
+  background-attachment: fixed;
   color: #fff;
 
 }
@@ -117,7 +118,7 @@ header {
 
 .card:hover {
   transform: translateY(-5px);
-  background: rgba(0,255,174,0.1);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .fix {
@@ -126,6 +127,11 @@ header {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
+body {
+    /* background-attachment: scroll; */
+    background-position: center top;
+  }
+
   .nav-links, .nav-actions {
     display: none;
   }
