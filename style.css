@@ -80,20 +80,13 @@ header {
 
 /* HERO */
 .hero {
+   background: url("./Hero.svg") no-repeat center;
+  background-size: contain;
   height: 100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding: 0 10%;
 }
 
 .hero > img{
-  
-  /* width: 100%; */
-  /* max-width: 400px; */
-  /* margin-bottom: 40px; */
+   display: none;
 }
 
 .hero h1 {
@@ -161,5 +154,14 @@ header {
     flex-direction:column;
     display:flex;
     padding:20px;
+  }
+
+  .hero {
+    height: auto;
+    padding-top: 120px; /* por causa do header fixo */
+  }
+
+  .hero img {
+    width: 100%;
   }
 }
