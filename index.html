@@ -135,6 +135,87 @@
   </article>
 </section>
 
+<section class="flow-section">
+
+<svg class="flow-lines" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <filter id="flowFilter">
+      <feTurbulence type="turbulence"
+        baseFrequency="0.008"
+        numOctaves="2"
+        seed="3"
+        result="noise">
+
+        <animate attributeName="baseFrequency"
+          dur="60s"
+          values="0.008;0.012;0.008"
+          repeatCount="indefinite"/>
+      </feTurbulence>
+
+      <feDisplacementMap
+        in="SourceGraphic"
+        in2="noise"
+        scale="20"
+        xChannelSelector="R"
+        yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+ 
+<!-- linha superior -->
+  <path
+    d="M600 250 L610 250 L592 250 L600 0"
+    stroke="#ffffff30"
+    stroke-width="2"
+    stroke-dasharray="6 8"
+    fill="none"
+    filter="url(#flowFilter)"
+  />
+
+   <!-- linha esquerda -->
+  <path
+    d="M150 100 L200 100 L200 250 L600 250"
+    stroke="#ffffff30"
+    stroke-width="2"
+    stroke-dasharray="6 8"
+    fill="none"
+    filter="url(#flowFilter)"
+  />
+
+  <!-- linha direita -->
+  <path
+    d="M1050 100 L800 100 L800 250 L600 250"
+    stroke="#ffffff30"
+    stroke-width="2"
+    stroke-dasharray="6 8"
+    fill="none"
+    filter="url(#flowFilter)"
+  />
+
+  <!-- nós -->
+  <circle cx="200" cy="105" r="10" fill="#0C0D12" stroke="#ffffff40"/>
+  <circle cx="805" cy="105" r="10" fill="#0C0D12" stroke="#ffffff40"/>
+  <circle cx="600" cy="255" r="10" fill="#0C0D12" stroke="#ffffff40"/>
+
+</svg>
+
+<div class="flow-content">
+
+  <div class="flow-box left">
+    <h3>I'm A Founder</h3>
+    <p>I want a quick setup and minimal customization for the product.</p>
+  </div>
+
+  <div class="flow-box right">
+    <h3>I'm An Accountant</h3>
+    <p>I want an easy installation and minimal customization.</p>
+  </div>
+
+</div>
+
+</section>
+
 </main>
 
 <footer class="footer" id="contato">
