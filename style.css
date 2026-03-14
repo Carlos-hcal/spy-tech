@@ -8,7 +8,7 @@ body {
 }
 
 /* DIGITAIS ANIMADAS */
-.bg-fingers{
+.bg-fingers {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -18,8 +18,9 @@ body {
   pointer-events: none;
   z-index: 0;
 }
+
 .finger {
- opacity: 0;
+  opacity: 0;
   transform-origin: center;
   transition: opacity 0.4s ease;
   pointer-events: none;
@@ -94,7 +95,7 @@ header {
 /* HERO */
 .hero {
   width: 100%;
-  min-height:75vh;
+  min-height: 75vh;
   display: grid;
   place-items: center;
   position: relative;
@@ -124,7 +125,7 @@ header {
 /* CARDS */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 80px 8%;
 }
@@ -144,19 +145,35 @@ header {
   0% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-32px);
   }
+
   100% {
     transform: translateY(0px);
   }
 }
 
-.card:nth-child(1){ animation-delay: 2s; }
-.card:nth-child(2){ animation-delay: 1s; }
-.card:nth-child(3){ animation-delay: 0s; }
-.card:nth-child(4){ animation-delay: 3s; }
-.card:nth-child(5){ animation-delay: 4s; }
+.card:nth-child(1) {
+  animation-delay: 2s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0s;
+}
+
+.card:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.card:nth-child(5) {
+  animation-delay: 4s;
+}
 
 .card h3 {
   margin-bottom: 10px;
@@ -171,58 +188,90 @@ header {
 
 .card:hover {
   transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.1);
+  background: #ffffff1a;
 }
 
 /* FLOW SECTION */
 
-.flow-section{
-  position:relative;
-  padding:120px 8%;
-  min-height:500px;
+.flow-section {
+  position: relative;
+  padding: 180px 8%;
+  min-height: 75vh;
+  max-height: 100vh;
 }
 
-.flow-lines{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  pointer-events:none;
+.flow-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
-.flow-content{
-  position:relative;
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  z-index:2;
+.flow-lines circle {
+  filter: drop-shadow(0 0 6px #ffffff40);
 }
 
-.flow-box{
-  max-width:300px;
+.flow-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  z-index: 2;
 }
 
-.flow-box h3{
-  font-size:24px;
-  margin-bottom:10px;
+.flow-content-link{
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 12px;
 }
 
-.flow-box p{
-  color:#aaa;
-  line-height:1.5;
+ .flow-content-link:hover{
+    color: #ffffffcc;
+  }
+
+.flow-box.left {
+  position: relative;
+  top: 164px;
+  right: 32px;
 }
 
-.flow-lines path{
-  stroke-dashoffset:0;
-  animation:flowMove 12s linear infinite;
+.flow-box.right {
+  position: relative;
+  top: 396px;
+  left: 128px;
 }
 
-@keyframes flowMove{
-  to{
-    stroke-dashoffset:200;
+.flow-box {
+  max-width: 300px;
+}
+
+.flow-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.flow-box p {
+  color: #aaa;
+  line-height: 1.5;
+}
+
+.flow-lines path {
+  stroke-dashoffset: 0;
+  animation: flowMove 12s linear infinite;
+}
+
+@keyframes flowMove {
+  to {
+    stroke-dashoffset: -200;
   }
 }
+
+
 
 /* FOOTER */
 .footer {
@@ -320,7 +369,7 @@ header {
     width: 90vw;
   }
 
-   .footer-container {
+  .footer-container {
     text-align: center;
   }
 
@@ -328,27 +377,30 @@ header {
     margin: 0 auto;
   }
 
-  .card{
+  .card {
     animation: floatCard 0s ease-in-out infinite;
   }
 
-    .flow-section{
-    padding:80px 8%;
+  .flow-section {
+    padding: 80px 8%;
+    
   }
 
-  .flow-box{
-    max-width:90%;
+  .flow-box {
+    /* max-width: 90%; */
+    display: flex;
+    flex-direction: column;
   }
 
-  .flow-lines{
-    display:none;
+  .flow-lines {
+    display: none;
   }
 
-    .flow-content{
-    flex-direction:column;
-    align-items:center;
-    gap:40px;
-    text-align:center;
+  .flow-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
   }
 
 }
