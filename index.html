@@ -143,13 +143,13 @@
       <svg class="flow-lines" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
 
         <defs>
-          <filter id="electricEffect">
-            <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="3" seed="2" result="noise">
+            <filter id="flowFilter">
+            <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" seed="3" result="noise">
 
-              <animate attributeName="baseFrequency" dur="50s" values="0.02;0.04;0.02" repeatCount="indefinite" />
+              <animate attributeName="baseFrequency" dur="60s" values="0.008;0.012;0.008" repeatCount="indefinite" />
             </feTurbulence>
 
-            <feDisplacementMap in="SourceGraphic" in2="noise" scale="40" result="distorted" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="20" xChannelSelector="R" yChannelSelector="G" />
 
             <!-- só usa o resultado distorcido -->
             <feGaussianBlur in="distorted" stdDeviation="0" />
@@ -159,11 +159,11 @@
 
         <!-- linhas -->
         <path d="M600 0
-  L600 150
-  L300 150
-  M600 150
-  L600 300
-  L900 300" stroke="#ffffff" stroke-width="2.5" fill="none" filter="url(#electricEffect)" />
+        L600 150
+          L300 150
+          M600 150
+          L600 300
+          L900 300" stroke="#ffffff80" stroke-width="2" stroke-dasharray="6 8" fill="none" filter="url(#flowFilter)" />
 
         <!-- nós -->
         <circle cx="300" cy="152" r="16" fill="#0C0D12" stroke="#ffffff40" />
