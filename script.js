@@ -53,3 +53,53 @@ function pulseFingers() {
 
 pulseFingers();
 
+  const container = document.querySelector('.slide-comment');
+
+  document.getElementById('next').onclick = () => {
+    container.scrollBy({
+      left: 420,
+      behavior: 'smooth'
+    });
+  };
+
+  document.getElementById('prev').onclick = () => {
+    container.scrollBy({
+      left: -420,
+      behavior: 'smooth'
+    });
+  };
+
+    let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  const slider = document.querySelector('.slide-comment');
+
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+
+     document.body.style.userSelect = 'none';
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+
+    document.body.style.userSelect = 'auto';
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+
+    document.body.style.userSelect = 'auto';
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 2; // velocidade
+    slider.scrollLeft = scrollLeft - walk;
+  });
