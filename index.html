@@ -3,40 +3,30 @@
 
 <head>
   <meta charset="UTF-8">
-
   <title>SpyTech | Tecnologia, Desenvolvimento Web e Cybersegurança</title>
-
   <meta name="description"
     content="SpyTech é uma empresa de tecnologia especializada em desenvolvimento web, cybersegurança, suporte técnico e soluções digitais para empresas e pessoas físicas.">
   <meta name="keywords"
     content="tecnologia, desenvolvimento web, cybersegurança, suporte técnico, manutenção de computadores, UX UI, SpyTech">
   <meta name="author" content="SpyTech">
   <meta name="robots" content="index, follow">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Open Graph (WhatsApp / Facebook / Instagram) -->
   <meta property="og:title" content="SpyTech | Tecnologia e Soluções Digitais">
   <meta property="og:description" content="Especialistas em desenvolvimento web, segurança digital e suporte técnico.">
   <meta property="og:image" content="https://www.spytech.dev.br/img/preview.jpg">
   <meta property="og:url" content="https://www.spytech.dev.br">
   <meta property="og:type" content="website">
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SpyTech | Tecnologia e Segurança Digital">
   <meta name="twitter:description" content="Desenvolvimento web, cybersegurança e soluções digitais.">
   <meta name="twitter:image" content="https://www.spytech.dev.br/img/preview.jpg">
-
   <link rel="canonical" href="https://www.spytech.dev.br">
-
   <link rel="icon" href="./img/favicon.svg" type="image/svg">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <svg class="bg-fingers" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <image href="./img/finger.svg" x="100" y="100" width="120" class="finger" />
     <image href="./img/finger.svg" x="400" y="150" width="120" class="finger" />
@@ -68,35 +58,28 @@
     <image href="./img/finger.svg" x="1550" y="940" width="120" class="finger" />
     <image href="./img/finger.svg" x="1850" y="900" width="120" class="finger" />
   </svg>
-
   <header>
     <nav class="navbar" aria-label="Menu principal">
       <div>
         <img class="logo" src="./img/logo.svg" alt="SpyTech - Empresa de tecnologia" draggable="false">
       </div>
-
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Inicio</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#sobre">Sobre</a></li>
       </ul>
-
       <div class="nav-actions">
         <a href="#contato" class="btn">Contato</a>
       </div>
-
       <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</div>
     </nav>
   </header>
-
   <main id="home">
-
     <section class="hero" aria-label="Apresentação">
       <picture class="hero-image">
         <img src="./img/logo-hero.svg" alt="SpyTech - Tecnologia e Segurança Digital" draggable="false">
       </picture>
-
       <svg class="blob" viewBox="0 0 428 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <defs>
           <filter id="blobFilter">
@@ -109,99 +92,69 @@
         <circle cx="200" cy="200" r="140" fill="white" filter="url(#blobFilter)" />
       </svg>
     </section>
-
     <section class="cards" id="servicos">
-
       <article class="card">
         <h3>Manutenção e Suporte Técnico</h3>
         <p>Correção de problemas, formatação, otimização e suporte para computadores, notebooks e smartphones.</p>
       </article>
-
       <article class="card">
         <h3>Desenvolvimento Web e Mobile</h3>
         <p>Criação de sites e aplicativos modernos, rápidos, seguros e responsivos.</p>
       </article>
-
       <article class="card">
         <h3>UX/UI Design e Criação de Marcas</h3>
         <p>Design de interfaces, identidade visual e experiência do usuário para negócios digitais.</p>
       </article>
-
       <article class="card">
         <h3>Soluções em Dados</h3>
         <p>Análise de dados, relatórios e automação de processos para decisões inteligentes.</p>
       </article>
-
       <article class="card">
         <h3>Cybersegurança</h3>
         <p>Monitoramento, prevenção de ataques e fortalecimento da segurança das suas informações.</p>
       </article>
     </section>
-
     <section class="flow-section">
-
       <svg class="flow-lines" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
-
         <defs>
           <filter id="flowFilter">
             <feTurbulence type="turbulence" baseFrequency="0.008" numOctaves="2" seed="3" result="noise">
-
               <animate attributeName="baseFrequency" dur="60s" values="0.008;0.012;0.008" repeatCount="indefinite" />
             </feTurbulence>
-
             <feDisplacementMap in="SourceGraphic" in2="noise" scale="20" xChannelSelector="R" yChannelSelector="G" />
-
-            <!-- só usa o resultado distorcido -->
             <feGaussianBlur in="distorted" stdDeviation="0" />
           </filter>
         </defs>
-
-
-        <!-- linhas -->
         <path d="M600 0
         L600 150
           L300 150
           M600 150
           L600 300
           L900 300" stroke="#ffffff80" stroke-width="2" stroke-dasharray="6 8" fill="none" filter="url(#flowFilter)" />
-
-        <!-- nós -->
         <circle cx="300" cy="152" r="16" fill="#0C0D12" stroke="#ffffff40" />
-
         <text x="300" y="156" text-anchor="middle" font-size="12" font-family="monospace" fill="#ffffff95">
           &lt;/&gt;
         </text>
         <circle cx="905" cy="305" r="16" fill="#0C0D12" stroke="#ffffff57" />
-
         <text x="905" y="309" text-anchor="middle" font-size="13" fill="#ffffff95">
           🛠
         </text>
-
-
-
       </svg>
-
       <div class="flow-content">
-
         <div class="flow-box left">
           <h3>Desenvolvimento Web Profissional</h3>
           <p>Criamos sites modernos, rápidos e seguros para empresas que querem crescer na internet e fortalecer sua
             presença digital.</p>
           <a href="#flow-content-links" class="flow-content-link">Nossos projetos -></a>
-
         </div>
-
         <div class="flow-box right">
           <h3>Segurança Digital e Suporte Técnico</h3>
           <p>Protegemos seus sistemas e dados com soluções de cybersegurança, manutenção e suporte especializado em
             tecnologia.</p>
           <a href="#flow-content-links" class="flow-content-link">Nossos projetos -></a>
         </div>
-
       </div>
-
     </section>
-
     <Section class="data-section">
       <h3 class="subtitle">Transforme dados em decisões em minutos</h3>
       <div class="data-content">
@@ -229,9 +182,33 @@
         </div>
       </div>
     </Section>
-
+    <section class="comment-section">
+      <div>
+        <h3>Empresas que confiam em Spy Tech</h3>
+        <div>
+          <div>
+            <p>2k+</p>
+            <p>Startups Ambiciosas</p>
+          </div>
+          <div>
+            <p>$20B+</p>
+            <p>Transações Categorizadas</p>
+          </div>
+        </div>
+      </div>
+      <div class="comment-card">
+        <img src="./img/mini-logo.svg" alt="empresa">
+        <p>Gostaríamos de expressar nosso sincero agradecimento à empresa Spy Tech pelos excelentes serviços prestados. A dedicação, profissionalismo e qualidade demonstrados ao longo do trabalho fizeram toda a diferença para alcançar os resultados esperados.</p>
+        <div>
+          <img src="./img/perfil.svg" alt="perfil do cliente">
+          <div>
+            <p>Carlos Cort</p>
+            <p>CO-Fundador e CPO | Spy Tech</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-
   <footer class="footer" id="contato">
     <div class="footer-container">
       <div class="footer-section">
@@ -239,7 +216,6 @@
           <img class="footer-logo" src="./img/brand.svg" alt="SpyTech logo" draggable="false">
           <p>Tecnologia e soluções digitais para o seu negócio.</p>
         </div>
-
         <nav class="footer-links" aria-label="Menu do rodapé">
           <h4>Menu</h4>
           <ul>
@@ -249,7 +225,6 @@
             <li><a href="#sobre">Sobre</a></li>
           </ul>
         </nav>
-
         <div class="footer-services">
           <h4>Serviços</h4>
           <ul>
@@ -259,7 +234,6 @@
             <li>Cybersegurança</li>
           </ul>
         </div>
-
         <address class="footer-contact">
           <h4>Contato</h4>
           <p>Curitiba - PR</p>
@@ -267,8 +241,6 @@
           <p>(41) 99783-8741</p>
         </address>
       </div>
-
-
       <div class="social-links">
         <a href="https://github.com/Carlos-hcal">
           <svg class="icon" width="32" height="32" fill="white" viewBox="0 0 24 24">
@@ -294,13 +266,10 @@
         </a>
       </div>
     </div>
-
-
     <div class="footer-bottom">
       <p>© 2026 SpyTech. Todos os direitos reservados.</p>
     </div>
   </footer>
-
   <script src="script.js" defer></script>
 </body>
 
