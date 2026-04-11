@@ -108,7 +108,7 @@ const comments = [
   {
     texto: "Gostaríamos de expressar nosso sincero agradecimento à empresa Spy Tech pelos excelentes serviços prestados. A dedicação, profissionalismo e qualidade demonstrados ao longo do trabalho fizeram toda a diferença para alcançar os resultados esperados. A equipe mostrou comprometimento, eficiência e atenção aos detalhes em cada etapa, transmitindo confiança e segurança.",
     nome: "Lucas Silva",
-    cargo: "Tia da Cantina | Escola do Mecânico",
+    cargo: "Gerente Financeiro | Escola do Mecânico",
     perfil: "./img/lucas.svg",
     empresa: "./img/Logo-Escola-do-Mecanico-1.png"
   },
@@ -120,30 +120,32 @@ const comments = [
     empresa: "./img/mare-soul.png"
   },
   {
-    texto: "Ficamos muito satisfeitos com a qualidade do serviço prestado pela Spy Tech. Desde o primeiro contato, a equipe se mostrou atenciosa, ágil e preparada para entender nossas necessidades. A entrega foi realizada com excelência, dentro do prazo e com um nível de acabamento que realmente se destaca. Sem dúvidas, foi uma parceria muito bem-sucedida.",
-    nome: "Ricardo Gomes",
-    cargo: "CEO | Canal Imports",
-    perfil: "./img/ricardo.svg",
-    empresa: "./img/canal-imports.png"
+    texto: "Trabalhar com a Spy Tech foi uma experiência muito produtiva. A equipe mostrou domínio técnico, organização e uma atenção especial aos detalhes que fizeram toda a diferença no resultado final. O suporte durante e após a entrega também foi um grande diferencial, garantindo que tudo funcionasse perfeitamente. Recomendamos fortemente os serviços prestados.",
+    nome: "Vinicius Costa",
+    cargo: "CTO | Pet Amigo",
+    perfil: "./img/vinicius.png",
+    empresa: "./img/pet-amigo.png"
   },
   {
     texto: "A Spy Tech demonstrou profissionalismo e competência em todas as fases do projeto. A comunicação foi sempre clara e objetiva, facilitando o alinhamento das expectativas e decisões. Além disso, a equipe apresentou soluções inteligentes que contribuíram diretamente para a melhoria dos nossos processos internos. Estamos muito satisfeitos com os resultados alcançados.",
     nome: "Juliana Rocha",
-    cargo: "Gerente de Operações | NexaCorp",
-     perfil: "./img/juliana.svg",
+    cargo: "Gerente de Operações | Teu Estilo",
+    perfil: "./img/juliana.svg",
     empresa: "./img/teu-estilo.svg"
-  },
-  {
-    texto: "Trabalhar com a Spy Tech foi uma experiência muito produtiva. A equipe mostrou domínio técnico, organização e uma atenção especial aos detalhes que fizeram toda a diferença no resultado final. O suporte durante e após a entrega também foi um grande diferencial, garantindo que tudo funcionasse perfeitamente. Recomendamos fortemente os serviços prestados.",
-    nome: "Ricardo Gomes",
-    cargo: "CTO | Alpha Systems",
-    perfil: "./img/ricardo.svg",
-    empresa: "./img/Logo-Escola-do-Mecanico-1.png"
   },
   {
     texto: "Gostaríamos de destacar a excelência do trabalho realizado pela Spy Tech. A equipe foi extremamente dedicada, compreendendo nossas necessidades e propondo soluções eficazes e bem estruturadas. O projeto foi conduzido com profissionalismo e responsabilidade, resultando em uma entrega de alta qualidade. Com certeza voltaremos a trabalhar juntos em novos projetos.",
     nome: "Patrícia Lima",
-    cargo: "Coordenadora | VisionTech"
+    cargo: "Coordenadora | Onda Boa",
+     perfil: "./img/patricia.png",
+    empresa: "./img/onda-boa.png"
+  },
+  {
+    texto: "Ficamos muito satisfeitos com a qualidade do serviço prestado pela Spy Tech. Desde o primeiro contato, a equipe se mostrou atenciosa, ágil e preparada para entender nossas necessidades. A entrega foi realizada com excelência, dentro do prazo e com um nível de acabamento que realmente se destaca. Sem dúvidas, foi uma parceria muito bem-sucedida.",
+    nome: "Ricardo Gomes",
+    cargo: "CEO | Canal Imports",
+    perfil: "./img/ricardo.svg",
+    empresa: "./img/canal-imports.svg"
   }
 ];
 
