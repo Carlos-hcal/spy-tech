@@ -1,0 +1,44 @@
+[
+    {
+    "texto": "Gostaríamos de expressar nosso sincero agradecimento à empresa Spy Tech pelos excelentes serviços prestados. A dedicação, profissionalismo e qualidade demonstrados ao longo do trabalho fizeram toda a diferença para alcançar os resultados esperados. A equipe mostrou comprometimento, eficiência e atenção aos detalhes em cada etapa, transmitindo confiança e segurança.",
+    "nome": "Lucas Silva",
+    "cargo": "Gerente Financeiro | Escola do Mecânico",
+    "perfil": "./assets/profiles/lucas.svg",
+    "empresa": "./assets/logos/Logo-Escola-do-Mecanico-1.png"
+    },
+    {
+    "texto": "A experiência com a Spy Tech foi extremamente positiva do início ao fim. O time demonstrou alto nível de conhecimento técnico, organização e compromisso com os prazos estabelecidos. Cada etapa do projeto foi conduzida com clareza e transparência, o que nos trouxe muita confiança durante todo o processo. O resultado final superou nossas expectativas e agregou valor real ao nosso negócio.",
+    "nome": "Fernanda Alves",
+    "cargo": "CEO | Maré Soul",
+    "perfil": "./assets/profiles/fernanda.svg",
+    "empresa": "./assets/logos/mare-soul.png"
+    },
+    {
+    "texto": "Trabalhar com a Spy Tech foi uma experiência muito produtiva. A equipe mostrou domínio técnico, organização e uma atenção especial aos detalhes que fizeram toda a diferença no resultado final. O suporte durante e após a entrega também foi um grande diferencial, garantindo que tudo funcionasse perfeitamente. Recomendamos fortemente os serviços prestados.",
+    "nome": "Vinicius Costa",
+    "cargo": "CTO | Pet Amigo",
+    "perfil": "./assets/profiles/vinicius.png",
+    "empresa": "./assets/logos/pet-amigo.png"
+    },
+    {
+    "texto": "A Spy Tech demonstrou profissionalismo e competência em todas as fases do projeto. A comunicação foi sempre clara e objetiva, facilitando o alinhamento das expectativas e decisões. Além disso, a equipe apresentou soluções inteligentes que contribuíram diretamente para a melhoria dos nossos processos internos. Estamos muito satisfeitos com os resultados alcançados.",
+    "nome": "Juliana Rocha",
+    "cargo": "Gerente de Operações | Teu Estilo",
+    "perfil": "./assets/profiles/juliana.svg",
+    "empresa": "./assets/logos/teu-estilo.svg"
+    },
+    {
+    "texto": "Gostaríamos de destacar a excelência do trabalho realizado pela Spy Tech. A equipe foi extremamente dedicada, compreendendo nossas necessidades e propondo soluções eficazes e bem estruturadas. O projeto foi conduzido com profissionalismo e responsabilidade, resultando em uma entrega de alta qualidade. Com certeza voltaremos a trabalhar juntos em novos projetos.",
+    "nome": "Patrícia Lima",
+    "cargo": "Coordenadora | Onda Boa",
+    "perfil": "./assets/profiles/patricia.png",
+    "empresa": "./assets/logos/onda-boa.png"
+    },
+    {
+    "texto": "Ficamos muito satisfeitos com a qualidade do serviço prestado pela Spy Tech. Desde o primeiro contato, a equipe se mostrou atenciosa, ágil e preparada para entender nossas necessidades. A entrega foi realizada com excelência, dentro do prazo e com um nível de acabamento que realmente se destaca. Sem dúvidas, foi uma parceria muito bem-sucedida.",
+    "nome": "Ricardo Gomes",
+    "cargo": "CEO | Canal Imports",
+    "perfil": "./assets/profiles/ricardo.svg",
+    "empresa": "./assets/logos/canal-imports.svg"
+    }
+]
