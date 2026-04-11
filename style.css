@@ -508,6 +508,62 @@ header {
   border: 2px solid #ffffff;
 }
 
+/*FAQ*/
+.faq {
+  height: 100vh;
+  width: 70%;
+  margin: auto;
+  color: #fff;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ffffff20;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 20px 10px;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question:hover {
+  color: #ccc;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  color: #aaa;
+  padding: 0 10px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-bottom: 15px;
+}
+
+.faq-item.active .icon {
+  transform: rotate(180deg);
+}
+
 /* FOOTER */
 .footer {
   height: 100vh;
